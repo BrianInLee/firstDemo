@@ -1,0 +1,50 @@
+<!-- 
+    creator:   Brian Lee
+    date:      2018/01/08
+    purpose:   网页音乐播放器
+    todo:      优化原生JS处理 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Music-player</title>
+	<link rel="stylesheet" href="css/music.css">
+</head>
+<body>
+	<audio id="comeon" src="data/azxyq.mp3" controls onended="go()">
+	</audio>
+
+	<input type="checkbox" id='single'>单曲循环  
+	<input type="checkbox" id='random'>随机播放  
+
+	<div class="box">
+		<button onclick="up()">上一曲</button>
+		<button onclick="down()">下一曲</button>
+		<button onclick="gorp()">开始/暂停</button>
+		<button onclick="stop()">停止播放</button>
+		<button onclick="rand()">随机播放</button>
+		<button onclick="ct()">显示时长</button>
+	</div>
+
+	<div class="back ti">
+		<div id="tiao" class="tback">	
+		</div>
+	</div>
+
+	<center>
+		<ul>
+			<li onclick="chosetheone(0,event)">爱在西元前</li>
+			<li onclick="chosetheone(1,event)">本草纲目</li>
+			<li onclick="chosetheone(2,event)">兰亭序</li>
+			<li onclick="chosetheone(3,event)">娘子</li>
+			<li onclick="chosetheone(4,event)">忍者</li>
+			<li onclick="chosetheone(5,event)">威廉古堡</li>
+			<li onclick="chosetheone(6,event)">蜗牛</li>
+		</ul>
+	</center>
+	
+</body>
+</html>
+<script src="js/music.js"></script>
+<script src="js/play.js"></script>

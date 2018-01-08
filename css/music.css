@@ -1,0 +1,53 @@
+div,input,ul,li,h1,h2,h3,h4,h5,h6,span,p,html{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: linear-gradient(to right, purple , lightblue);
+}
+li{
+	list-style-type:none; 
+	cursor:pointer; 
+	background-color:#eeeeee; 
+	width:100px;
+	min-height: 20px;
+	border-radius: 3px;
+	color: #000;
+	margin-top:10px;
+}
+li:hover{
+	background-color: red;
+}
+.box{
+	width: 500px;
+	margin-left: 500px; 
+	text-align: center;
+}
+.box button{
+	cursor: pointer;
+	border-radius: 5px;
+	width: 200px;
+	max-height: 100px;
+	font-size: 30px;
+}
+
+/*
+	功能性样式
+*/
+.chosen{
+	background-color: blue;
+	color: white;
+}
+.ti{
+	height: 10px;
+}
+.back{
+	width: 300px;
+	background-color: #efefef;
+}
+.tback{
+	background-color: red;
+	width: 0;
+	height: 10px;
+}
+/* ending */
